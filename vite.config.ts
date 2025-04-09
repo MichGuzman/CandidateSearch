@@ -1,7 +1,9 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+  preview: {
+    allowedHosts: ['candidate-search-project.onrender.com'], // tu dominio en Render
+  },
 });
